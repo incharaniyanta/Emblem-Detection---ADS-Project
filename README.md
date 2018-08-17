@@ -15,6 +15,19 @@ Assuming perfect training, we can design a standard neural network whose perform
 
 
  So, we use CNN for image classification training models with 27 different logos. We compare the result from different model which was trained for same number data using two different approach. One model consists of Keras with tensor flow backend and the other is implementing transfer learning using Google’s popular Inception v3 model
+ 
+## Deployment 
+Both the trained models where deployed in EC2 instance with required user Interface. The web application was secured with different logins and each login had its own functionality. 
+
+## Conclusion 
+Inception V3 classifies better than Keras model build by us. The keras model requires more data of images which might in turn require more GPU than the GPU we used to train in Discovery cluster. 
+
+## Future Scope 
+The deployment can be performed for multiple images for company logo analytics used by consumers in social media by downloading images from their public post. We can even perform analysis-based geolocation-based consumer usage from the location shared in their post.
+
+For more and better colcusions, please refer to the Project report.
+
+
 
 ## License
 This project is licensed under the MIT License - see the file LICENSE.md for details
